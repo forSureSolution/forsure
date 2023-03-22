@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'CircularStd Regular';
+  src: url("../../../public/assets/fonts/CircularStd-Book.ttf");
+}
+
+:root{
+  --primary-color:#60E1CB;
+  --secondary-color:#7BC0E3;
+  --hover-color:#E9EAF4;
+  --text-color:#000000;
+  --black-color:#292525;
+  --background-color:#E9FBF8;
+  --background-color-hover: #FDFDFF;
+  --box-shadow: 0px 97px 90px rgba(7, 0, 59, 0.12);
+  --family-primary: 'CircularStd Regular';
+  --family-text: 'DM Sans', sans-serif;
+  --font-head:clamp(1.25rem, calc(0.90rem + 1.7vw), 1.95rem);
+  --line-head:clamp(2.08rem, calc(2.16rem + 1.0vw), 2.80rem);
+  --font-subHead: clamp(1.13rem, calc(0.91rem + 1.09vw), 1.60rem);
+  --line-subHead: clamp(1.69rem, calc(1.40rem + 1.41vw), 2.50rem);
+  --font-text: clamp(0.50rem, calc(0.35rem + 0.76vw), 0.88rem);
+  --line-text: clamp(1.00rem, calc(0.74rem + 1.30vw), 1.55rem);
+  --font-subText: clamp(0.44rem, calc(0.31rem + 0.65vw), 0.81rem);
+  --line-subText: clamp(0.81rem, calc(0.66rem + 0.76vw), 1.25rem);
+  --font-subTextHeader: clamp(0.94rem, calc(0.79rem + 0.76vw), 1.38rem);
+  --line-subTextHeader: clamp(1.31rem, calc(1.12rem + 0.98vw), 1.88rem);
+  --height-gap: clamp(2.19rem, calc(0.47rem + 8.59vw), 6.83rem);
+}
+
+.header{
+	font-size: var(--font-head);
+	line-height: var(--line-head);
+	font-weight: 700;
+	color: var(--black-color);
+  font-family: var(--family-primary);
+}
+
+.subHeader{
+	font-size: var(--font-subHead);
+	line-height: var(--line-subHead);
+	font-weight: 700;
+	color: var(--black-color);
+  font-family: var(--family-primary);
+}
+
+.subHeaderBig{
+
+	font-size: var(--font-subHead);
+	line-height: var(--line-subHead);
+
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	font-family: var(--family-primary);
+	color: var(--secondary-color);
+}
+
+.text{
+	font-size: var(--font-text);
+	line-height: var(--line-text);
+	font-weight: 400;
+	color: var(--text-color);
+	font-family: var(--family-text);
+}
+
+.uppercaseText{
+	font-size: var(--font-text);
+	line-height: var(--line-text);
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: var(--family-text);
+}
+
+.subTextHeader{
+	font-size: var(--font-subTextHeader);
+	line-height: var(--line-subTextHeader);
+	font-weight: 700;
+	color: var(--black-color);
+	font-family: var(--family-primary);
+}
+
+.gapHeight{
+	height: var(--height-gap);
+	min-height: 1.8em;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+input {
+	outline: transparent;
+}
+
+.dead-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+.dead-center-single-child {
+	display: grid;
+	place-items: center;
+}
+
+
+
